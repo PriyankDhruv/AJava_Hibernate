@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 4 Apr, 2019 2:09:52 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="com.vvp.java.Studinfo" table="studinfo" catalog="studinfo">
+        <id name="studId" type="int">
+            <column name="Stud_Id" />
+            <generator class="assigned" />
+        </id>
+        <property name="studName" type="string">
+            <column name="Stud_Name" length="65535" not-null="true" />
+        </property>
+        <property name="semester" type="int">
+            <column name="Semester" not-null="true" />
+        </property>
+        <property name="branch" type="string">
+            <column name="Branch" length="65535" not-null="true" />
+        </property>
+        <property name="phoneNo" type="string">
+            <column name="Phone_No" length="65535" not-null="true" />
+        </property>
+        <property name="enrollNo" type="string">
+            <column name="Enroll_No" length="65535" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
